@@ -1,5 +1,5 @@
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "2.0.21"
+    id("org.jetbrains.kotlin.jvm") version "2.2.0"
     id("java-gradle-plugin")
     id("maven-publish")
 }
@@ -32,9 +32,9 @@ kotlin {
 
 dependencies {
     implementation(gradleApi())
-    implementation("org.jetbrains.kotlin:kotlin-compiler-embeddable:2.0.21")
-    compileOnly("com.android.tools.build:gradle:8.3.0")
+    implementation("org.jetbrains.kotlin:kotlin-compiler-embeddable:2.2.0")  // ← same
+    compileOnly("com.android.tools.build:gradle:8.5.0")
 
     testImplementation("junit:junit:4.13.2")
-    testImplementation("org.jetbrains.kotlin:kotlin-compiler-embeddable:2.0.21")
+    testImplementation("org.jetbrains.kotlin:kotlin-compiler-embeddable:2.2.0")
 }

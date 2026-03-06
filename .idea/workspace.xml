@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc4d49ed-7193-49a6-9acb-d661fed03f80" name="Changes" comment="Gradle plugin project setup">
+    <list default="true" id="fc4d49ed-7193-49a6-9acb-d661fed03f80" name="Changes" comment="Updated to Java 17">
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bluetriangle/trackerplugin/BttTrackerPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/bluetriangle/trackerplugin/BttTrackerPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/bluetriangle/trackerplugin/transform/BttSourceTransformer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/bluetriangle/trackerplugin/transform/BttSourceTransformer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +18,26 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="BTTTrackerPlugin" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,6 +53,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.BTTTrackerPlugin [clean assemble publishToMavenLocal].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -50,6 +73,45 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin/com/bluetriangle/trackerplugin/tasks" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/com/bluetriangle/trackerplugin" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="./gradlew clean -Pgroup=com.github.IsmailAloha -Pversion=95df933286 -xtest assemble publishToMavenLocal" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="BTTTrackerPlugin [clean assemble publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="-Pgroup=com.github.IsmailAloha -Pversion=95df933286 -xtest" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+            <option value="assemble" />
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.BTTTrackerPlugin [clean assemble publishToMavenLocal]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -75,11 +137,20 @@
       <option name="project" value="LOCAL" />
       <updated>1772797795331</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated to Java 17">
+      <option name="closed" value="true" />
+      <created>1772798034418</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1772798034418</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Gradle plugin project setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gradle plugin project setup" />
+    <MESSAGE value="Updated to Java 17" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated to Java 17" />
   </component>
 </project>
