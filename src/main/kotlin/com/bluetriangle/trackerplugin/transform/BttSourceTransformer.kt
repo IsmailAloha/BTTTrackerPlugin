@@ -6,6 +6,7 @@ import org.jetbrains.kotlin.cli.jvm.compiler.EnvironmentConfigFiles
 import org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment
 import org.jetbrains.kotlin.com.intellij.openapi.util.Disposer
 import org.jetbrains.kotlin.com.intellij.psi.PsiFileFactory
+import org.jetbrains.kotlin.config.CommonConfigurationKeys
 import org.jetbrains.kotlin.config.CompilerConfiguration
 import org.jetbrains.kotlin.config.messageCollector
 import org.jetbrains.kotlin.idea.KotlinFileType
@@ -22,9 +23,12 @@ import org.jetbrains.kotlin.psi.KtFile
 class BttSourceTransformer(private val trackFunctionName: String) {
 
     private val environment: KotlinCoreEnvironment by lazy {
+        System.setProperty("idea.io.use.nio2", "true")
         val configuration = CompilerConfiguration()
-        configuration.messageCollector = MessageCollector.NONE  // ← property syntax
-        KotlinCoreEnvironment.createForProduction(
+        configuration.messageCollector = MessageCollector.NONE
+        configuration.put(CommonConfigurationKeys.MODULE_NAME, "btt-tracker")
+
+        KotlinCoreEnvironment.createForTests(
             Disposer.newDisposable(),
             configuration,
             EnvironmentConfigFiles.JVM_CONFIG_FILES
